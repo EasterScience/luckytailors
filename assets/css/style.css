@@ -3612,11 +3612,12 @@ hr {
 }
 .map-area {
   position: absolute;
-  bottom: 21%;
-  left: 7%;
+  bottom: 0;
+  left: 0;
+  padding-bottom: 16%;
 }
-.map-area img {
-  height: 458px;
+.map-area iframe {
+  height: 350px;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1440px) {
   .map-area img {
