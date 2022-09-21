@@ -3622,26 +3622,27 @@ hr {
   padding-left: 5%;
   
 } 
-iframe {
+.map-iframe {
   height: 280px;
+
   
 }
 @media only screen and (min-width: 1200px) and (max-width: 1440px) {
   .map-iframe {
-    width: 100%;
-    height: 501px;
+    width: 560px;
+    height: 470px;
   }
 }
 @media only screen and (min-width: 1441px) and (max-width: 1500px) {
   .map-iframe {
-    width: 100%;
-    height: 501px;
+    width: 560px;
+    height: 470px;
   }
 }
 @media only screen and (min-width: 1501px) and (max-width: 1750px) {
   .map-iframe {
-    width: 100%;
-    height: 501px;
+    width: 560px;
+    height: 470px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
