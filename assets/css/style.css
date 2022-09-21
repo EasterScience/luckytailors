@@ -3652,12 +3652,14 @@ iframe {
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .map-iframe {
-    display: none;
+    width: 80%;
+    height: 415px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .map-iframe {
-    display: none;
+    width: 65%;
+    height: 400px;
   }
 }
 @media (max-width: 575px) {
