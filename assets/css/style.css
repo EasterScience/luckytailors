@@ -100,6 +100,9 @@
 [data-opacity="9"]::before {
   opacity: 0.9;
 }
+html, body {
+  overflow-x: hidden;
+}
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: normal;
@@ -1610,14 +1613,8 @@ hr {
   }
 }
 .rotateme {
-  -webkit-animation-name: rotateme;
-  animation-name: rotateme;
-  -webkit-animation-duration: 30s;
-  animation-duration: 30s;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
+  -webkit-animation: rotateme 30s linear infinite;
+  animation: rotateme 30s linear infinite;
 }
 @keyframes rotateme {
   from {
@@ -2168,7 +2165,9 @@ hr {
   -webkit-align-items: center;
   align-items: center;
   padding: 0px 90px;
-  padding-right: 0;
+  padding-right: 90px;
+  width: 100%;
+  max-width: 100%;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
   .header-area .header-bottom {
@@ -2403,6 +2402,24 @@ hr {
 }
 .slider-area .single-slider .hero-caption {
   overflow: hidden;
+  padding-top: 100px;
+  text-align: center;
+}
+.slider-area .single-slider .hero-caption.hero-caption2 {
+  text-align: center;
+  padding-top: 50px;
+}
+@media (max-width: 991px) {
+  .slider-area .single-slider .hero-caption {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 575px) {
+  .slider-area .single-slider .hero-caption {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 .slider-area .single-slider .hero-caption img {
   margin-bottom: 32px;
@@ -2490,8 +2507,9 @@ hr {
 }
 .slider-area .single-slider .hero-img {
   position: absolute;
-  right: 0;
+  right: -50px;
   bottom: 0;
+  max-width: none;
 }
 .slider-area .single-slider .hero-img.hero-img2 img {
   width: inherit;
@@ -2885,7 +2903,8 @@ hr {
   opacity: 0.3;
 }
 .clients-area .single-offers {
-  padding-left: 60px;
+  padding-left: 0px;
+  text-align: center;
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .clients-area .single-offers {
@@ -2894,7 +2913,7 @@ hr {
 }
 @media (max-width: 575px) {
   .clients-area .single-offers {
-    padding-left: 52px;
+    padding-left: 0px;
   }
 }
 .clients-area .single-offers .offers-img {
@@ -3616,16 +3635,13 @@ hr {
 } */
 
 .map-area {
-  position: absolute;
-  left: 0;
-  top: 13%;
-  padding-left: 5%;
-  
+  position: relative;
+  padding: 20px 0;
 } 
 .map-iframe {
-  height: 280px;
-
-  
+  height: 350px;
+  max-height: 350px;
+  overflow: hidden;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1440px) {
   .map-iframe {
@@ -3665,7 +3681,7 @@ hr {
 }
 @media (max-width: 575px) {
   .map-iframe {
-    display: none;
+    height: 200px;
   }
 }
 .page-notification {

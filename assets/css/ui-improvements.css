@@ -1,0 +1,332 @@
+/* UI Friendly Improvements for Lucky Tailor */
+
+/* Modern Card Design */
+.single-offers, .single-cat {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    border: none;
+    overflow: hidden;
+    height: 100%;
+    margin-bottom: 30px;
+}
+
+.single-offers:hover, .single-cat:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* Card Image Fixes */
+.offers-img {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.offers-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.cat-icon {
+    text-align: center;
+    padding: 30px 20px 20px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cat-icon img {
+    max-width: 60px;
+    max-height: 60px;
+    width: auto;
+    height: auto;
+}
+
+/* Card Content */
+.offers-cap {
+    padding: 25px;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.cat-cap {
+    padding: 0 25px 25px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.offers-cap span {
+    background: #007bff;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.offers-cap h3, .cat-cap h5 {
+    margin: 15px 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.offers-cap p, .cat-cap p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* Button Improvements */
+.btn {
+    border-radius: 25px;
+    padding: 12px 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0,123,255,0.3);
+    color: white;
+    text-decoration: none;
+}
+
+/* Header Improvements */
+.header-btn {
+    background: linear-gradient(45deg, #28a745, #20c997);
+    border-radius: 20px;
+    padding: 8px 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5 {
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+/* Footer Modern Design */
+.footer-wrapper {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    padding-left: 0 !important;
+}
+
+.footer-area {
+    padding: 60px 0 40px;
+}
+
+@media (max-width: 768px) {
+    .footer-area {
+        padding: 40px 0 30px;
+    }
+    
+    .single-footer-caption {
+        margin-bottom: 30px;
+    }
+}
+
+.footer-social a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+.footer-social a:hover {
+    background: #007bff;
+    transform: translateY(-3px);
+}
+
+/* Map Container */
+.map-area {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* Contact Info Cards */
+.contact-info {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.contact-info:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.contact-info__icon {
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+/* Form Improvements */
+.form-control {
+    border-radius: 8px;
+    border: 2px solid #e9ecef;
+    padding: 12px 15px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,0.25);
+}
+
+/* Testimonial Cards */
+.testimonial-caption {
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.testimonial-caption::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 30px;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    transform: rotate(45deg);
+}
+
+/* Loading Animation */
+.preloader {
+    background: linear-gradient(45deg, #007bff, #0056b3);
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Text Wrap and Overflow Fixes */
+.single-offers p, .single-cat p, .hero-caption p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    line-height: 1.6;
+}
+
+.footer-pera p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+}
+
+.testimonial-caption p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.7;
+}
+
+/* Prevent horizontal overflow */
+.container, .container-fluid {
+    overflow-x: hidden;
+}
+
+/* Section Spacing */
+.section-padding40 {
+    padding: 60px 0;
+}
+
+/* Equal Height Cards */
+.clients-area .row, .categories-area .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.clients-area .row > [class*='col-'], .categories-area .row > [class*='col-'] {
+    display: flex;
+    align-items: stretch;
+}
+
+.clients-area .single-offers, .categories-area .single-cat {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Mobile Optimizations */
+@media (max-width: 768px) {
+    .btn {
+        padding: 10px 25px;
+        font-size: 13px;
+        width: auto;
+    }
+    
+    .single-offers, .single-cat {
+        margin-bottom: 25px;
+        height: auto;
+    }
+    
+    .contact-info {
+        text-align: center;
+    }
+    
+    .contact-info__icon {
+        margin: 0 auto 15px;
+    }
+    
+    /* Mobile text adjustments */
+    .hero-caption h1 {
+        word-wrap: break-word;
+        line-height: 1.2;
+        font-size: 1.8rem;
+    }
+    
+    .single-offers h3, .single-cat h5 {
+        font-size: 1.1rem;
+        line-height: 1.3;
+    }
+    
+    .section-padding40 {
+        padding: 40px 0;
+    }
+    
+    .hero-caption {
+        text-align: center;
+        padding: 20px;
+    }
+}
